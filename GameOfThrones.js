@@ -71,12 +71,12 @@ const gameOfThrones = (s) => {
       count++;
     }
   }
-  if (count <= 1) {
-    return "YES";
-  } else {
+  if (count > 1) {
     return "NO";
+  } else {
+    return "YES";
   }
 };
 
-let s = "cdcdcdcdeeeef";
+let s = "cdefghmnopqrstuvw";
 console.log(gameOfThrones(s));
